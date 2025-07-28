@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title> Carousel</title>
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo"><a href="index.html">MyPortfolio</a></div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html">Say Hello</a></li>
+      <li><button id="darkToggle">🌙</button></li>
+    </ul>
+  </nav>
+  <div class="image-slider">
+    <button class="btn-prev">&lt;</button>
+
+    <div class="carousel-window">
+      <div class="carousel-row">
+        <div class="carousel-item">
+          <img src="Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg" alt="Cardinals 1" />
+          <h2>Abdulhafeez</h2>
+          <p>Style isn't just about clothes — it's about confidence.</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="Sundar_Pichai_-_2023_(cropped).jpg" alt="Cardinals 2" />
+          <h2>Cardinals Vision</h2>
+          <p>From the streets to the spotlight — we speak bold.</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="profile.jpg" alt="Cardinals 3" />
+          <h2>The Essence</h2>
+          <p>Every thread is a voice. Every drop is identity.</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="MV5BNWI4ZTJiZmUtZGI5MC00NTk4LTk2OTYtNDU3NTJiM2QxNzM0XkEyXkFqcGc@._V1_.jpg" alt="Cardinals 4" />
+          <h2>Abdulhafeez25</h2>
+          <p>"You weren’t coded to crash.
+Run the present like a live system —
+debug fear, deploy courage, and never rollback.".</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-next">&gt;</button>
+  </div>
+
+  <script src="carousel.js"></script>
+</body>
+</html>

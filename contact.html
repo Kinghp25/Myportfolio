@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - MyPortfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">MyPortfolio</a></div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="contact.html" class="active">Say Hello</a></li>
+      <li><button id="darkToggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form -->
+  <section class="content-section">
+    <h1>Contact Me</h1>
+    <p>Have a question, review, or feedback? I'd love to hear from you!</p>
+
+    <form action="https://formsubmit.co/abdulhafeezhassan25@gmail.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <!-- FormSubmit Configuration -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="thankyou.html" />
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AbdulhafeezPortfolio. All rights reserved.</p>
+    <p>
+      <a href="tel:+2349070296697">📞 Call</a> |
+      <a href="mailto:abdulhafeezhassan25@gmail.com">📧 Email</a> |
+      <a href="https://wa.me/2348064587542" target="_blank">💬 WhatsApp</a> |
+      <a href="https://linkedin.com/in/yourusername" target="_blank">🔗 LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

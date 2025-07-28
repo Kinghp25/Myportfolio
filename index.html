@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulhafeez Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="#home">Welcome</a></div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Say Hello</a></li>
+      <li><button id="darkToggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <img src="profile.jpg" alt="Abdulhafeez Profile" class="about-img" />
+    <h1>Hello, I'm Abdulhafeez</h1>
+    <p>A passionate fullstack developer based in Nigeria</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </header>
+
+  <!-- About Section -->
+  <section class="content-section" id="about">
+    <h2>About Me</h2>
+    <p>I’m Abdulhafeez Hassan, a passionate web developer and tech enthusiast with expertise in building dynamic and user-friendly websites and applications. I have experience in full-stack development, specializing in PHP, SQL, and modern frontend technologies like CSS, Bootstrap, and Tailwind. With a strong eye for design and functionality, I create responsive, aesthetically pleasing, and performance-optimized solutions. I hold a web development certification from Coldlines Technology and have worked on diverse projects, including e-commerce platforms, clothing websites, and music apps. My focus on user experience and efficient coding practices ensures high-quality results.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="content-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Login System</h3>
+        <p>A PHP-based login system with user roles and session handling.</p>
+        <a href="https://try-amber-eight.vercel.app" class="btn" target="_blank">View</a>
+      </div>
+      <div class="project-card">
+         <h3>Payment Form</h3>
+        <p>A secure payment interface using HTML forms and PHP processing.</p>
+        <a href="https://pay-gamma-gilt.vercel.app" class="btn" target="_blank">View</a>
+
+      </div>
+      <div class="project-card">
+               <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML, CSS, and Bootstrap.</p>
+        <a href="https://github.com/Kinghp25" class="btn" target="_blank">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="content-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-4 col-md-2 text-center mb-4"><i class="fab fa-html5 skill-icon mb-2"></i><p>HTML5</p></div>
+      <div class="col-4 col-md-2 text-center mb-4"><i class="fab fa-css3-alt skill-icon mb-2"></i><p>CSS3</p></div>
+      <div class="col-4 col-md-2 text-center mb-4"><i class="fab fa-js skill-icon mb-2"></i><p>JavaScript</p></div>
+      <div class="col-4 col-md-2 text-center mb-4"><i class="fab fa-php skill-icon mb-2"></i><p>PHP</p></div>
+      <div class="col-4 col-md-2 text-center mb-4"><i class="fab fa-database skill-icon mb-2"></i><p>MySQL</p></div>
+      
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="content-section" id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Codelines Tech Web Developer (Intern)</h3>
+        <span class="timeline-date">March 2025 – August 2025</span>
+        <p>As a full-stack web developer, I am skilled in both frontend and backend development. I specialize in PHP and MySQL for building robust backend systems, while using modern frontend technologies like CSS, Bootstrap to create responsive and visually appealing user interfaces.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Freelance Developer</h3>
+        <span class="timeline-date">2024 – Present</span>
+        <p>Built custom websites for clients using responsive, clean code and modern design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="content-section" id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Lagos State University</h3>
+        <span class="timeline-date">2023</span>
+        <p>I am a proud graduate of Lagos State University, where I earned my degree in Bachelor of Science (B.Sc) in Insurance. My academic journey equipped me with a deep understanding of governance, societal dynamics, and analytical skills, which have significantly contributed to my problem-solving abilities and structured thinking as a web developer.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Fullstack Web Development (Codelines Tech)</h3>
+        <span class="timeline-date">2024</span>
+        <p>Learning HTML, CSS, JavaScript, PHP, Git.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="content-section" id="carousel">
+    <div class="image-slider">
+      <button class="btn-prev">&lt;</button>
+      <div class="carousel-window">
+        <div class="carousel-row">
+          <div class="carousel-item">
+            <img src="Visit_of_Tim_Cook_to_the_European_Commission_-_P061904-946789.jpg" alt="Tim Cook" />
+            <h2>tim cook</h2>
+            <h6>CEO, Apple</h6>
+            <p>People will try to convince you that you should keep your empathy out of your career. Don’t accept this false premise. If we work to create a better world, one person at a time, that is what it means to lead a life of purpose.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="Sundar_Pichai_-_2023_(cropped).jpg" alt="Sundar Pichai" />
+            <h2>Sundar Pichai</h2>
+            <h6>CEO, Google</h6>
+            <p>Wear your failure as a badge of honor. The knowledge you gain from it will make you stronger and better prepared to face the next challenge. Success always comes from learning, adapting, and growing..</p>
+          </div>
+          <div class="carousel-item">
+            <img src="profile.jpg" alt="Profile" />
+             <h2>Abdulhafeez25</h2>
+             <h6>CEO, Hpcodes</h6>
+            <p>You weren’t coded to crash.<br>Run the present like a live system —<br>debug fear, deploy courage, and never rollback.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="MV5BNWI4ZTJiZmUtZGI5MC00NTk4LTk2OTYtNDU3NTJiM2QxNzM0XkEyXkFqcGc@._V1_.jpg" alt="Jeff Bezos" />
+            <h2>Jeff Bezos</h2>
+            <h6>CEO, Amazon</h6>
+           <p>
+             In business, what’s dangerous is not to evolve. The world is changing, and we’re always thinking about how we can create value for our customers by staying ahead of those changes. We innovate by being willing to experiment, to fail, and to learn from those failures. If you double the number of experiments you do per year, you’re going to double your inventiveness.
+           </p>
+          </div>
+        </div>
+      </div>
+      <button class="btn-next">&gt;</button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="content-section" id="contact">
+    <h2>Get In Touch</h2>
+    <h1 style="font-size: 3rem;">I love to hear from you. Whether you have a question or just want to chat about design, tech & art — shoot me a message.
+
+</h1>
+    <form class="contact-form" action="https://formsubmit.co/abdulhafeezhassan25@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AbdulhafeezPortfolio. All rights reserved.</p>
+    <p>
+      <a href="tel:+2349070296697" style="color: white;">📞 Call</a> |
+      <a href="mailto:abdulhafeezhassan25@gmail.com"style="color: white;">📧 Email</a> |
+      <a href="https://wa.me/2348064587542"style="color: white;" target="_blank">💬 WhatsApp</a> |
+      <a href="https://linkedin.com/in/yourusername"style="color: white;" target="_blank">🔗 LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="carousel.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

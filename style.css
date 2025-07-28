@@ -1,0 +1,236 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary: #007bff;
+  --card-bg: #f8f9fa;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Universal transition */
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Affect everything */
+main, section, header, nav, footer,
+aside, article, div, form, ul, li, input, textarea, button {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--card-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links li button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: var(--card-bg);
+}
+
+.hero img.about-img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Section Container */
+.content-section {
+  padding: 3rem 1.5rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Icons */
+.skill-icon {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+/* Timeline Section */
+.timeline {
+  border-left: 3px solid var(--primary);
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.timeline-date {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* Carousel */
+.image-slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-row {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-bg);
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+}
+
+/* Make footer respect dark mode */
+body.dark-mode footer {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
