@@ -84,10 +84,11 @@ aside, article, div, form, ul, li, input, textarea, button {
 
 .hero img.about-img {
   width: 250px;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
   margin-bottom: 1rem;
   border-radius: 8px;
+  
 }
 
 .btn {
